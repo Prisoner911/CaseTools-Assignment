@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            table{
+                border: 3px solid black;
+                border-collapse: collapse;
+                background-color: aliceblue;
+            }
+            td{
+                text-align: left;
+                width: 65%;
+            }
+        </style>
+    </head>
+    <body>
+        <p style="text-align: center; font-size: 18px; font-weight: bold; margin-bottom: 0px;">Registration form</p>
+        <form id="get" autocomplete="on" action="reg.php" method="post">
+            <table border="6" style="text-align: center;" align="center">
+                <tr>
+                    <th><label>Enter your first name</label></th>
+                    <td><input type="text" name="fn" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <th><label>Enter your last name</label></th>
+                    <td><input type="text" name="ln" required></td>
+                </tr>
+                <tr>
+                    <th><label>Enter your password</label></th>
+                    <td><input type="password" name="pwd" maxlength="6" required></td>
+                </tr>
+                <tr>
+                    <th><label>ReEnter your password</label></th>
+                    <td><input type="password" name="rpwd" maxlength="6" required></td>
+                </tr>
+                <tr>
+                    <th><label>Enter your email</label></th>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th>Enter your mobile</th>
+                    <td><input type="tel" name="ph" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <th>Enter your address</th>
+                    <td><textarea rows="10" cols="22" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Select your gender</th>
+                    <td><input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select your hobbies</th>
+                    <td><input type="checkbox" name="hobby1" value="Playing games">Playing games
+                        <input type="checkbox" name="hobby2" value="Singing/Dancing">Singing/Dancing
+                        <input type="checkbox" name="hobby2" value="Photography">Photography
+                    </td>
+                </tr>
+                <tr>
+                    <th>Select your DOB</th>
+                    <td><input type="date" name="dob" value=""></td>
+                </tr>
+                <tr>
+                    <th>Select your country</th>
+                    <td><select name="counry" value="">
+                        <option>Select your country</option>
+                        <option>Afghanistan</option>
+                        <option>Bangladesh</option>
+                        <option>China</option>
+                        <option>Denmark</option>
+                        <option>Egypt</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>Hungary</option>
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>Kuwait</option>
+                        <option>Laos</option>
+                        <option>Mongolia</option>
+                        <option>Nepal</option>
+                        <option>Oman</option>
+                        <option>Phillippines</option>
+                        <option>Qatar</option>
+                        <option>Russia</option>
+                        <option>Saudi Arabia</option>
+                        <option>United Kingdom</option>
+                        <option>Uruguay</option>
+                        <option>Vietnam</option>
+                        <option>Yemen</option>
+                        <option>Zambia</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th>Upload your pic</th>
+                    <td><input type="file" name="img" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Save my data">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+        </table>
+    </form>
+    
+    </body>
+</html>

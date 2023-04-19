@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <audio autoplay loop id="music">
+            <source src="media/music/ost3.mp3">
+        </audio>
+        <title>Hogwarts</title>
+        <style>
+            body{
+                background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("media/images/hog3.jpg");
+                background-size: contain,cover;
+                background-repeat: repeat,no-repeat;
+                background-position: top,top;
+                margin: 0px;
+                background-attachment: fixed;
+            }
+            .logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                margin-top: 20px;
+                
+            }
+            .title{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-top: 0px;
+            }
+            .div0{
+                display: block;
+                margin: auto;
+            }
+            .enter{
+                width: 15%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div0" id="section0">
+            <img src="media/images/hog_png.png" class="logo">
+            <img src="media/images/hog_title.png" class="title">
+        </div>
+        <br>
+        <div class="div1" align="center">
+            <a id="next" href="assignment4.html"><img class="enter" src="media/images/enter.png">
+        </div>
+        <script>
+            window.addEventListener('click',() => {
+                document.getElementById("music").play();
+            });
+        </script>
+    </body>
+</html>

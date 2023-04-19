@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <audio id="music" autoplay="true">
+            <source src="/media/music/ost1.mp3">
+        </audio>
+        <title>Admission form</title>
+        <style>
+            body{
+                background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("media/images/hog-1.jpg"),url("media/images/wiz3.gif"),url("media/images/hog2.jpg"),url("media/images/brick.jpg");
+                background-color: black;
+                background-position: top,top,0px 830px,0px 1585px,0px 50cm;
+                background-repeat: repeat,no-repeat,no-repeat,no-repeat,repeat;
+                background-size: contain,contain,contain,contain,contain;
+            }
+            input{
+                background: rgba(255, 255, 255, 0.307);
+                border: black solid;
+            }
+            input:hover{
+                cursor: pointer;
+            }
+            input:focus{
+                color: beige;
+            }
+            select{
+                background: rgba(255, 255, 255, 0.307);
+                border: black solid;
+            }
+            .pf{
+                color: beige;
+                font-size: 20px;
+                border: rgb(255, 204, 0) dotted;
+            }
+            .lg{
+                color: rgb(0, 255, 217);
+                font-weight: bold;
+            }
+            .logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                margin-top: 0px;
+            }
+            .title{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+                margin-top: 0px;
+            }
+            .f_title{
+                text-align: center;
+                font-weight: bold;
+                font-size: 82px;
+                color: rgb(199,136,39);
+                text-decoration: underline;
+                margin-bottom: 0px;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: black;
+                
+            }
+            .div0{
+                display: block;
+                margin: auto;
+            }
+            .div1{
+                margin-top: 1150px;
+            }
+            .b_div{
+                text-align: center;
+            }
+            .b{
+                height: 50px;
+                width: 150px;
+                background-color: rgb(199, 136, 39);
+                opacity: 1;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+            }
+            .b:hover{
+                cursor: pointer;
+                background-color: rgb(121, 80, 0);
+                transition: 0.1s;
+            }
+            .b:active{
+                color: rgb(199, 136, 39);
+                transition: 0.1s;
+                background-color: rgb(0, 255, 217);
+            }
+            .sub{
+                background: transparent;
+                height: 150px;
+                width: 250px;
+                border: none;
+            }
+            .sub:hover{
+                cursor: pointer;
+            }
+            .b1{
+                border: none;
+                height: 50px;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                display: block;
+                margin-bottom: 30px;
+                border-radius: 50px;
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 241, 201);
+                font-family: 'IM Fell English SC', serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .b1:hover{
+                cursor: pointer;
+            }
+            .b1:active{
+                transition: 0.2s;
+                background-color: rgb(26, 18, 18);
+                color: rgb(232, 214, 253);
+                font-size: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div0">
+            <img src="media/images/hog_png.png" class="logo">
+            <img src="media/images/hog_title.png" class="title">
+        </div>
+        <div class="div1">   
+            <p class="f_title">Hogwarts Admission Form</p>
+            <form id="sform" method="post" action="" autocomplete="on">
+                <fieldset class="pf">
+                    <legend class="lg">Personal Information</legend>
+                    <label>First name</label>
+                    <input type="text" name="fname" style="width: 150px;" required>
+                    <label style="margin-left: 10px;">Second name</label>
+                    <input type="text" name="mname" style="width: 150px;" required>
+                    <label style="margin-left: 10px;">Last name</label>
+                    <input type="text" name="lname" style="width: 150px;" required>
+                    <br><br>
+                    <label>Gender</label>
+                    <input type="radio" value="m" name="gender" required>Male
+                    <input type="radio" value="f" name="gender" required>Female
+                    <br><br>
+                    <label>Caste Group</label>
+                    <select name="caste" style="text-align: center;" required>
+                        <option>-select-</option>
+                        <option>General Castes</option>
+                        <option>Scheduled Castes</option>
+                        <option>Scheduled Tribes</option>
+                        <option>Other Backward Castes</option>
+                    </select>
+                    <label style="margin-left: 10px;">Caste name</label>
+                    <input type="text" name="caste_name" required>
+                    <br><br>
+                    <label>Phone number</label>
+                    <input type="tel" name="ph" maxlength="10" required>
+                    <br><br>
+                    <label>Email</label>
+                    <input type="email" name="email">
+                    <br><br>
+                    <label>Address</label>
+                    <input type="text" name="adr" required>
+                    <br><br>
+                </fieldset>
+                <br>
+                <fieldset class="pf">
+                    <legend class="lg">Accademic Details</legend>
+                    <label>Highest accademic qualifications</label>
+                    <input type="text" name="qual">
+                    <br><br>
+                    <label>Previous school/college name</label>
+                    <input type="text" name="pre_sc">
+                    <br><br>
+                    <label>10th std reuslt</label>
+                    <input type="file" accept="image/*" name="res10">
+                    <br><br>
+                    <label>12th std result</label>
+                    <input type="file" accept="image/*" name="res12">
+                </fieldset>
+                <br>
+                <fieldset class="pf">
+                    <legend class="lg">EULA</legend>
+                    <input type="checkbox" name="rules" value="y" required>I agree that I will follow code of conduct of the academy.
+                    <br>
+                    <input type="checkbox" name="policy" value="y" required>I agree to the policies of the academy.
+                </fieldset>
+                <br>
+                <div class="b_div">
+                    <input type="image" src="media/images/submit.png" class="sub">
+                    <button type="reset" name="reset" id="reset" class="sub"><img src="media/images/clear.png"  class="sub"></button>
+                </div>
+           </form>
+        </div> 
+        <a href="homepage.html" style="text-decoration: none;"><button class="b1">Homepage</button></a>
+        <script>
+                
+        </script>
+    </body>
+</html>

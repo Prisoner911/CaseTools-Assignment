@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+        <title>Houses</title>
+
+        <audio id="music" autoplay="true" loop>
+            <source src="/media/music/ost2.mp3">
+        </audio>
+        <style>
+            
+            body{
+                background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("media/images/hog3.jpg"), url("media/images/hog4.jpg");
+                background-size: contain,cover,cover;
+                background-repeat: repeat,no-repeat,no-repeat;
+                background-position: top,top,0px 804px;
+                margin: 0px;
+            }
+            .gryf{
+                height: 240px;
+                width: 240px;
+                
+            }
+            .huff{
+                height: 260px;
+                width: 240px;
+                margin-left: 2cm;
+            }
+            .rav{
+                height: 260px;
+                width: 280px;
+                margin-left: 2cm;
+            }
+            .slyt{
+                height: 260px;
+                width: 240px;
+                margin-left: 2cm;
+            }
+            .logo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 15%;
+                margin-top: 150px;
+                
+            }
+            .title{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-top: 0px;
+            }
+            .div0{
+                display: block;
+                margin: auto;
+            }
+            .txt{
+                color: beige;
+            }
+            .t_title{
+                font-size: 500%;
+                width: 100%;
+                text-align: center;
+                color: beige;
+                font-weight: bold;
+                font-family: 'Dancing Script', cursive;
+                margin-top: 350px;
+            }
+            .c_div{
+                position: absolute;
+                z-index: 100;
+                width: 100%;
+            }
+            .b{
+                border: none;
+                height: 50px;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -10px;
+                display: block;
+                margin-bottom: 30px;
+                border-radius: 50px;
+                color: blue;
+                background-color: rgb(255, 241, 201);
+                font-family: 'IM Fell English SC', serif;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .b:hover{
+                cursor: pointer;
+            }
+            .b:active{
+                transition: 0.2s;
+                background-color: rgb(26, 18, 18);
+                color: rgb(232, 214, 253);
+                font-size: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div0" id="section0">
+            <img src="media/images/hog_png.png" class="logo">
+            <img src="media/images/hog_title.png" class="title">
+        </div>
+        <div class="c_div" id="section1">
+            <p class="t_title">HOGWARTS HOUSES</p>
+            <p style="text-align: center; font-family: 'IM Fell English SC', serif; color: beige; font-size: 58px;">Click the house symbol to view more information on them.</p>
+            <div class="h_div" align="center">
+            <a id="gryf" href="https://pottermore.fandom.com/wiki/Gryffindor" target="_blank"><img class="gryf" src="media/images/gryf.png"></a>
+            <a id="huff" href="https://harrypotter.fandom.com/wiki/Hufflepuff" target="blank"><img class="huff" src="media/images/huff.png"></a>
+            <a id="ravn" href="https://harrypotter.fandom.com/wiki/Ravenclaw" target="blank"><img class="rav" src="media/images/rav.png"></a>
+            <a id="slyt" href="https://harrypotter.fandom.com/wiki/Slytherin" target="blank"><img class="slyt" src="media/images/slyt.png"></a>
+            </div>
+            <p style="text-align: center; color: beige; font-size: 30px; font-family: 'IM Fell English SC', serif; margin: 0px;">
+                Interested in Hogwarts? Here is the <a href="assignment2.html" style="color: blue;">
+                admission form</a>
+            </p>
+            <a href="#section0" style="color: beige; font-family: 'IM Fell English SC', serif; font-size: 20px;">Go to top</a>
+            <a href="homepage.html" style="text-decoration: none;"><button class="b">Homepage</button></a>
+            <a id="af" href="form.html">Go to admission form</a>
+        </div>
+        
+        <script>
+            window.addEventListener('click',() => {
+                document.getElementById("music").play();
+            });
+        </script>
+    </body>
+</html>
